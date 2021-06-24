@@ -22,7 +22,7 @@ fn cat(path: &String) {
 }
 
 fn main() {
-    for arg in env::args() {
+    for arg in env::args().skip(1) {
         cat(&arg);
     }
 }
